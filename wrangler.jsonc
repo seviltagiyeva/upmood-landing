@@ -1,0 +1,11 @@
+{
+  // Serves this folder as a static site. Cloudflare runs `npx wrangler deploy` on every push to main.
+  "name": "upmood-landing",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./",
+    // /privacy serves privacy.html, /terms serves terms.html, /support serves support.html
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
