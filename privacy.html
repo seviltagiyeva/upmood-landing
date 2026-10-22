@@ -21,24 +21,34 @@
 <table>
 <tr><th>Information</th><th>Why we use it</th></tr>
 <tr><td><strong>Account details</strong>: your name and email, and an identifier from Sign in with Apple or Google</td><td>To sign you in and keep your account separate from everyone else’s.</td></tr>
-<tr><td><strong>Your check-ins</strong>: the mood you pick, or the few words you write (up to 280 characters), and when</td><td>To choose quotes for how you feel, show your history, and build your weekly summary.</td></tr>
+<tr><td><strong>Your check-ins</strong>: the mood you pick, or the few words you write (up to 280 characters), and when</td><td>To choose quotes for how you feel, show your history, and build your weekly summary. If you write words and say yes when asked, they are also sent to an AI service to suggest a mood (see “AI and your words” below).</td></tr>
 <tr><td><strong>Your reading</strong>: which quotes you saw, liked and saved</td><td>To avoid repeating quotes, keep your collection, and show which authors you read.</td></tr>
 <tr><td><strong>Your settings</strong>: check-in time, time zone, notification choices, theme, age</td><td>To send notifications at the right time and keep quotes age-appropriate.</td></tr>
 <tr><td><strong>Optional personalization</strong>: how you identify, and traditions whose quotes you would rather not see. Only if you say yes</td><td>To tailor your quotes. It is stored only while you keep personalization on; turning it off erases it.</td></tr>
 <tr><td><strong>Notification details</strong>: a push token for your device and a record of notifications we sent</td><td>To deliver notifications and show “how often Upmood reached you”.</td></tr>
 <tr><td><strong>Subscription status</strong>: whether you have Plus and until when (payments are handled by Apple; we never see your card)</td><td>To unlock Plus features.</td></tr>
-<tr><td><strong>App usage and crash reports</strong>: screens and actions in the app, an anonymous user ID, and error reports</td><td>To fix problems and understand which features help. We do not put your mood text or email into analytics.</td></tr>
+<tr><td><strong>App usage and crash reports</strong>: screens and actions in the app, your user ID, your email and name (so we can tell whose report or usage it is), and error reports</td><td>To fix problems and understand which features help. We never put your mood text into analytics. You can switch usage sharing off in Settings.</td></tr>
 </table>
 <p>We do not collect your precise location, contacts or photos, and we do not use your data for advertising or tracking across other companies’ apps.</p>
 
+<h2>AI and your words</h2>
+<p>You can tell Upmood how you feel by picking a mood, or by writing a few words. If you write words, Upmood can use an AI service to suggest a mood from them.</p>
+<ul>
+<li><strong>It is your choice.</strong> The first time you write words, the app asks whether it may send them to the AI. If you say no, your words are matched with Upmood’s own simple word matching on our server and are not sent to the AI. You can also just pick a mood.</li>
+<li><strong>What is sent.</strong> Only the words you wrote for that check-in (up to 280 characters), together with instructions, and nothing that names you, such as your name or email. We use the answer only to choose a mood and the quotes that fit it.</li>
+<li><strong>Who receives it.</strong> Google (Gemini API). Google processes the words to produce the answer under its own terms and privacy policy.</li>
+<li><strong>AI can make mistakes.</strong> The mood it suggests is a guess, and the app tells you so.</li>
+</ul>
+
 <h2>Sensitive information</h2>
-<p>Mood entries and, if you choose it, personalization answers can be sensitive. We ask before using anything beyond the basics, we use it only to choose your quotes, and you can erase it in <strong>Settings › Personalization</strong>.</p>
+<p>Mood entries (including any words you write) and, if you choose it, personalization answers can be sensitive. We ask before using anything beyond the basics, we use it only to choose your quotes, and you can erase it in <strong>Settings › Personalization</strong>.</p>
 
 <h2>Who helps us run Upmood</h2>
 <p>We share information only with services that help us operate the app, and only what they need:</p>
 <ul>
 <li><strong>Apple and Google</strong>: sign-in. <strong>Apple</strong> also handles payments and push notification delivery.</li>
 <li><strong>RevenueCat</strong>: manages subscriptions and receipts.</li>
+<li><strong>Google (Gemini AI)</strong>: only if you agree, the words you write for a check-in are sent to suggest a mood. Not used for anything else.</li>
 <li><strong>Expo</strong>: sends push notifications.</li>
 <li><strong>PostHog</strong>: product analytics. <strong>Sentry</strong>: crash and error reports.</li>
 <li><strong>Our hosting and database provider</strong>: stores your account data on our behalf.</li>
@@ -52,6 +62,7 @@
 <ul>
 <li><strong>Delete your account</strong>: Settings › Delete account. It removes your data.</li>
 <li><strong>Erase personal answers</strong>: Settings › Personalization.</li>
+<li><strong>Say no to the AI</strong>: choose “No thanks” when the app asks, or pick a mood instead of writing. Usage sharing can be switched off in Settings.</li>
 <li><strong>Notifications</strong>: change the time or turn them off in the app or in iOS Settings.</li>
 <li><strong>Access or correct your data, or ask a question</strong>: email <a href="mailto:support@upmood.app">support@upmood.app</a>. Depending on where you live (for example the EU, UK or California) you may have additional rights, and we will honour them.</li>
 </ul>
