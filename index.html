@@ -222,9 +222,6 @@
   .heart-big { display: grid; place-items: center; margin-top: 12px; }
   .heart-big svg { width: 64px; fill: #FF8FA3; filter: drop-shadow(0 8px 14px rgba(255,100,130,.4)); animation: beat 3.6s ease-in-out infinite; }
   @keyframes beat { 0%,100% { transform: scale(1); } 50% { transform: scale(1.12); } }
-  .plus { background: linear-gradient(155deg, rgba(255,240,196,.8), rgba(255,255,255,.35) 60%); display: flex; flex-wrap: wrap; gap: 14px 40px; align-items: center; justify-content: space-between; }
-  .plus ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
-  .plus li { padding: 8px 16px; border-radius: 999px; background: rgba(255,255,255,.7); box-shadow: inset 0 1px 0 #fff; font: 700 .92rem 'Nunito', sans-serif; color: var(--ink); }
 
   .privacy { padding: 46px; display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: center; --r: 40px; }
   .privacy ul { list-style: none; padding: 0; display: grid; gap: 16px; }
@@ -252,7 +249,7 @@
   .btn.ghost { border: 0; box-shadow: 0 10px 24px -12px rgba(42,35,64,.28); background: rgba(255,255,255,.62); }
   .btn { box-shadow: 0 14px 30px -8px color-mix(in srgb, var(--brand-glow) 50%, transparent); }
   .chip[aria-pressed="true"] { box-shadow: 0 6px 16px -6px rgba(42,35,64,.25); }
-  .ico, .num, .sw, .dot, .mini-q, .row, .wk-stats div, .wk-authors span, .plus li { box-shadow: none; }
+  .ico, .num, .sw, .dot, .mini-q, .row, .wk-stats div, .wk-authors span { box-shadow: none; }
   .dot.none { border: 2px dashed rgba(42,35,64,.2); }
 
   /* open: no boxes, the content sits straight on the sky and a faint wash only marks where it lives */
@@ -260,7 +257,7 @@
   .nav.glass { -webkit-backdrop-filter: blur(24px) saturate(160%); backdrop-filter: blur(24px) saturate(160%); background: rgba(255,255,255,.5); box-shadow: 0 14px 34px -20px rgba(42,35,64,.3); }
   .float.glass, .notif.glass { box-shadow: 0 20px 40px -22px rgba(42,35,64,.3); }
   .eyebrow.glass, .moods.glass { background: rgba(255,255,255,.5); }
-  .ico, .num, .mini-q, .row, .wk-stats div, .wk-authors span, .plus li { background: rgba(255,255,255,.55); }
+  .ico, .num, .mini-q, .row, .wk-stats div, .wk-authors span { background: rgba(255,255,255,.55); }
 
 
   @media (max-width: 900px) {
@@ -314,7 +311,7 @@
           <a class="btn" id="get" href="#" aria-label="Download Upmood on the App Store">Download on the App Store</a>
           <a class="btn ghost" href="#how">See how it works</a>
         </div>
-        <p class="fine rise" style="--d:4">Free to start · 20 quotes a day · iPhone</p>
+        <p class="fine rise" style="--d:4">Free · iPhone</p>
         <p class="pick-label rise" style="--d:5" id="pick-label">Try a mood</p>
         <div class="moods glass rise" style="--d:6" role="group" aria-labelledby="pick-label" id="chips"></div>
       </div>
@@ -419,10 +416,6 @@
           <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></div>
           <h3>Saved and liked</h3><p>Keep the lines you want to come back to, all in one quiet place.</p>
           <div class="heart-big" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-8-4.9-8-11.2A4.6 4.6 0 0 1 12 7a4.6 4.6 0 0 1 8 2.8C20 16.1 12 21 12 21z"/></svg></div>
-        </article>
-        <article class="b glass s6 plus reveal">
-          <div><h3>Upmood Plus</h3><p>When you want more of the good stuff. Free to start, always.</p></div>
-          <ul><li>100 quotes a day</li><li>Check-ins all day</li><li>Unlimited saves</li></ul>
         </article>
       </div>
     </div>
